@@ -1,0 +1,9 @@
+<li>
+	{{employee_name}}
+
+	<button class="change-employee" data-id="{{id}}" data-newemployee="{{active}}">
+		{{#if active}}Take off!{{else}}Go to work!{{/if}}
+	</button>
+
+	<button class="delete-employee" data-id="{{this.id}}">DELETE!</button>
+</li>
