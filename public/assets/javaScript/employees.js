@@ -27,7 +27,7 @@ $(function() {
   
       var newEmployee = {
         employee_name: $("#ca").val().trim(),
-        inactive: $("[name=devoured]:checked").val().trim()
+        inactive: $("[name=inactive]:checked").val().trim()
       };
   
       // Send the POST request.
