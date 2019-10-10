@@ -36,7 +36,7 @@ $(function() {
         data: newEmployee
       }).then(
         function() {
-          console.log("created new employee");
+          console.log(" new employee created");
           // Reload the page to get the updated list
           location.reload();
         }

@@ -1,17 +1,15 @@
-<h1>Employees!</h1>
-
-<h2>List of active Employees!</h2>
-
-<ul>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Employees!</h1>
+    <h2>List of employees on duty!</h2>
+    <ul>
   {{#each employees}}
     {{#unless inactive}}
       {{> employees/employees-block active=true}}
     {{/unless}}
   {{/each}}
 </ul>
-
-<h2>Employees Off!</h2>
-
+<h2>Employees off duty!</h2>
 <ul>
   {{#each employees}}
     {{#if inactive}}
@@ -19,7 +17,6 @@
     {{/if}}
   {{/each}}
 </ul>
-
 <h2>Add a employees</h2>
 <form class="create-form">
 
@@ -36,3 +33,17 @@
 
   <button type="submit">Add Employee</button>
 </form>
+    {{!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> --}}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
